@@ -38,15 +38,5 @@
     </form>
     <h3 class="ps">psst....I'll just send you an email to confirm its you - the title will be "Please confirm your follow request"</h3>
   </div>
-  <script>
-    document
-      .getElementById('gumroad-follow-form-embed-button')
-      .addEventListener('click', function() {
-        posthog.capture('guide_requested', {
-          button_name: 'Send me the Guide Now!',
-          email: document.getElementById('gumroad-follow-form-embed-input').value
-        });
-      });
-  </script>
 </body>
 </html>
